@@ -127,13 +127,15 @@ project "msdfgen"
 
 	filter "configurations:Debug"
 		runtime "Debug"
+		optimize "off"
 		symbols "on"
 
 	filter "configurations:Release"
 		runtime "Release"
-		optimize "on"
+		optimize "speed"
+		symbols "on"
 
 	filter "configurations:Dist"
 		runtime "Release"
-		optimize "on"
-        symbols "off"
+		optimize "speed"
+	        symbols "off"
