@@ -4,8 +4,8 @@ project "freetype"
 	language "C"
     staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (buildbindir .. "/%{prj.name}")
+	objdir  (buildintdir .. "/%{prj.name}")
 
 	files
 	{
@@ -91,8 +91,8 @@ project "msdfgen"
 	cppdialect "C++17"
     staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (buildbindir .. "/%{prj.name}")
+	objdir  (buildintdir .. "/%{prj.name}")
 
 	files
 	{
